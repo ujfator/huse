@@ -7,8 +7,23 @@
         <meta name="description" content="Simple to do list that will help you somewhat organize yourself. Maybe.">
         <link rel="stylesheet" type="text/css" href="main.css">    
     </head>
-        <h1>To do list!</h1>
-    <body>
+        <h1>To do Liszt!</h1>
+    <body ng-app="myApp" ng-controller="todoList">
+        <h2>My Todo List</h2>
+
+        <form ng-submit="todoAdd()">
+            <input type="text" ng-model="todoInput" size="50" placeholder="Add New">
+            <input type="submit" value="Add New">
+        </form>
+
+        <br>
+
+        <div ng-repeat="x in todoList">
+            <input type="checkbox" ng-model="x.done"> <span ng-bind="x.todoText"></span>
+        </div>
+
+        <p><button ng-click="remove()">Remove marked</button></p>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
         <script src="app.js"></script>    
     </body>    
 </html>
