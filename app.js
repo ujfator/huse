@@ -1,6 +1,6 @@
-var app = angular.module('myApe', []); 
+var app = angular.module('myApp', []); 
 app.controller('todoList', function($scope) {
-    $scope.todoList = [{todoText:'Wake the FUCK UP', done:false}];
+    $scope.todoList = [{todoText:'Wake up before 6 AM', done:false}];
 
     $scope.todoAdd = function() {
         $scope.todoList.push({todoText:$scope.todoInput, done:false});
