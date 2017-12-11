@@ -8,13 +8,12 @@
         <link rel="stylesheet" type="text/css" href="main.css">    
     </head>
         <video-bg ng-app="myApp" video-id="ZXsQAXx_ao0"></video-bg>
-        <h1>To do Liszt!</h1>
+        <h1>To do list</h1>
     <body ng-app="myApe" ng-controller="todoList">
-        <h2>My Todo List</h2>
 
         <form ng-submit="todoAdd()">
-            <input type="text" ng-model="todoInput" size="50" placeholder="Do some shit">
-            <input type="submit" value="Get yo ass up">
+            <input type="text" ng-model="todoInput" size="50" placeholder="Insert your planned activities">
+            <input type="submit" value="Create an activity">
         </form>
 
         <br>
@@ -23,7 +22,7 @@
             <input type="checkbox" ng-model="x.done"> <span ng-bind="x.todoText"></span>
         </div>
 
-        <p><button ng-click="remove()">done man</button></p>
+        <p><button ng-click="remove()">If you consider your activity as done, please click here</button></p>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
         <script src="app.js"></script>  
         <script src="kanzelm3-angular-video-bg-92a8e93/angular-video-bg.js"></script>
