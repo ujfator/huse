@@ -7,22 +7,23 @@
         <meta name="description" content="Simple to do list that will help you somewhat organize yourself. Maybe.">
         <link rel="stylesheet" type="text/css" href="main.css">    
     </head>
-        <div ng-app="myApp" video-id="ZXsQAXx_ao0"></div>
-        <h1>Below you may find proposed to do list.</h1>
+        <video-bg ng-app="myApp" video-id="ZXsQAXx_ao0"></video-bg>
+        <h1>To do Liszt!</h1>
     <body ng-app="myApe" ng-controller="todoList">
-        <h2>Such is mentioned to do list.</h2>
+        <h2>My Todo List</h2>
 
         <form ng-submit="todoAdd()">
-            <input type="text" ng-model="todoInput" size="50" placeholder="Please insert your plans">
-            <input type="submit" value="Create an activity">
+            <input type="text" ng-model="todoInput" size="50" placeholder="Do some shit">
+            <input type="submit" value="Get yo ass up">
         </form>
 
         <br>
+
         <div ng-repeat="x in todoList">
             <input type="checkbox" ng-model="x.done"> <span ng-bind="x.todoText"></span>
         </div>
 
-        <p><button ng-click="remove()">If you consider activity done, click here</button></p>
+        <p><button ng-click="remove()">done man</button></p>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
         <script src="app.js"></script>  
         <script src="kanzelm3-angular-video-bg-92a8e93/angular-video-bg.js"></script>
