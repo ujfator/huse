@@ -7,13 +7,14 @@
         <meta name="description" content="Simple to do list that will help you somewhat organize yourself. Maybe.">
         <link rel="stylesheet" type="text/css" href="main.css">    
     </head>
+        <video-bg ng-app="myApp" video-id="ZXsQAXx_ao0"></video-bg>
         <h1>To do Liszt!</h1>
-    <body ng-app="myApp" ng-controller="todoList">
+    <body ng-app="myApe" ng-controller="todoList">
         <h2>My Todo List</h2>
 
         <form ng-submit="todoAdd()">
-            <input type="text" ng-model="todoInput" size="50" placeholder="Add New">
-            <input type="submit" value="Add New">
+            <input type="text" ng-model="todoInput" size="50" placeholder="Do some shit">
+            <input type="submit" value="Get yo ass up">
         </form>
 
         <br>
@@ -22,8 +23,9 @@
             <input type="checkbox" ng-model="x.done"> <span ng-bind="x.todoText"></span>
         </div>
 
-        <p><button ng-click="remove()">Remove marked</button></p>
+        <p><button ng-click="remove()">done man</button></p>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-        <script src="app.js"></script>    
+        <script src="app.js"></script>  
+        <script src="kanzelm3-angular-video-bg-92a8e93/angular-video-bg.js"></script>
     </body>    
 </html>

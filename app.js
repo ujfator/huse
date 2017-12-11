@@ -1,4 +1,4 @@
-var app = angular.module('myApp', []); 
+var app = angular.module('myApe', []); 
 app.controller('todoList', function($scope) {
     $scope.todoList = [{todoText:'Wake the FUCK UP', done:false}];
 
