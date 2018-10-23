@@ -2,14 +2,14 @@
 <html lang="en">
     <head>
         <title>To do list by Marek</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
         <meta charset="utf-8">
         <meta name="author" content="Marek Beneš">
         <meta name="description" content="Simple to do list that will help you somewhat organize yourself. Maybe.">
         <link rel="stylesheet" type="text/css" href="main.css">    
     </head>
-        <video-bg ng-app="myApp" video-id="ZXsQAXx_ao0"></video-bg>
         <h1>To do list</h1>
-    <body ng-app="myApe" ng-controller="todoList">
+    <body ng-app="myApp" ng-controller="todoList">
 
         <form ng-submit="todoAdd()">
             <input type="text" ng-model="todoInput" size="50" placeholder="Insert your planned activities">
@@ -23,7 +23,6 @@
         </div>
 
         <p><button ng-click="remove()">If you consider your activity as done, please click here</button></p>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
         <script src="app.js"></script>  
         <script src="kanzelm3-angular-video-bg-92a8e93/angular-video-bg.js"></script>
     </body>    
